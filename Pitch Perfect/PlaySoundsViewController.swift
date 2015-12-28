@@ -62,9 +62,15 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playFastSound(sender: UIButton) {
+        audioEngine.stop()
+        audioEngine.reset()
+        
         playRateBasedSound(1.5)
     }
     @IBAction func playSlowSound(sender: UIButton) {
+        audioEngine.stop()
+        audioEngine.reset()
+        
         playRateBasedSound(0.5)
     }
     func playRateBasedSound(rate : Float) {
