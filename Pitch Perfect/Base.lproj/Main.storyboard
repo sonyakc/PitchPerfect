@@ -16,103 +16,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oNo-rd-oSF">
-                                <rect key="frame" x="212" y="94" width="100" height="100"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZZ-Ai-xT3">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <state key="normal" image="fast"/>
-                                        <connections>
-                                            <action selector="playFastSound:" destination="Zg9-bE-jHe" eventType="touchUpInside" id="zwX-4H-vq3"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="kZZ-Ai-xT3" firstAttribute="centerY" secondItem="oNo-rd-oSF" secondAttribute="centerY" id="NpV-GE-u6o"/>
-                                    <constraint firstItem="kZZ-Ai-xT3" firstAttribute="centerX" secondItem="oNo-rd-oSF" secondAttribute="centerX" id="aNZ-zS-Wj7"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="NpV-GE-u6o"/>
-                                        <exclude reference="aNZ-zS-Wj7"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" axis="vertical" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="232" y="114" width="100" height="100"/>
-                                    <mask key="constraints">
-                                        <include reference="NpV-GE-u6o"/>
-                                        <include reference="aNZ-zS-Wj7"/>
-                                    </mask>
-                                </variation>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNV-i4-VaZ">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button" image="slow"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="46" y="114" width="109" height="105"/>
-                                </variation>
-                                <connections>
-                                    <action selector="playSlowSound:" destination="Zg9-bE-jHe" eventType="touchUpInside" id="ehN-sk-mpj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRk-vX-cuk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="stop"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="175" y="474" width="50" height="50"/>
+                                </variation>
                                 <connections>
                                     <action selector="stopAudio:" destination="Zg9-bE-jHe" eventType="touchUpInside" id="dEO-o1-4Ok"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ped-ND-720">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ped-ND-720">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Button" image="chipmunk"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="49" y="250" width="106" height="100"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="56" y="250" width="106" height="100"/>
+                                </variation>
                                 <connections>
                                     <action selector="playChipmunkAudio:" destination="Zg9-bE-jHe" eventType="touchUpInside" id="t8Z-q1-VZZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6u-uH-G7D">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6u-uH-G7D">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Button" image="darthvadar"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="232" y="250" width="100" height="100"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="227" y="250" width="100" height="100"/>
+                                </variation>
                                 <connections>
                                     <action selector="playDarthvaderAudio:" destination="Zg9-bE-jHe" eventType="touchUpInside" id="zAk-Fp-CTQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZZ-Ai-xT3">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <state key="normal" title="Button" image="fast"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="227" y="114" width="100" height="100"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playFastSound:" destination="Zg9-bE-jHe" eventType="touchUpInside" id="zwX-4H-vq3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNV-i4-VaZ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="slow"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="46" y="114" width="109" height="105"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="56" y="114" width="109" height="105"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playSlowSound:" destination="Zg9-bE-jHe" eventType="touchUpInside" id="ehN-sk-mpj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="R49-Tr-Na7" firstAttribute="top" secondItem="uRk-vX-cuk" secondAttribute="bottom" constant="76" id="6bp-xA-2f4"/>
-                            <constraint firstItem="uRk-vX-cuk" firstAttribute="centerX" secondItem="VId-6q-PDn" secondAttribute="centerX" id="JZ6-XX-tKN"/>
-                            <constraint firstItem="uRk-vX-cuk" firstAttribute="centerX" secondItem="VId-6q-PDn" secondAttribute="centerX" id="TJA-nq-BUd"/>
-                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="CNV-i4-VaZ"/>
                                 <exclude reference="uRk-vX-cuk"/>
-                                <exclude reference="Ped-ND-720"/>
-                                <exclude reference="N6u-uH-G7D"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="JZ6-XX-tKN"/>
-                                <exclude reference="TJA-nq-BUd"/>
-                                <exclude reference="6bp-xA-2f4"/>
+                                <exclude reference="kZZ-Ai-xT3"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="CNV-i4-VaZ"/>
                                 <include reference="uRk-vX-cuk"/>
-                                <include reference="Ped-ND-720"/>
-                                <include reference="N6u-uH-G7D"/>
                             </mask>
-                            <mask key="constraints">
-                                <include reference="JZ6-XX-tKN"/>
-                                <include reference="TJA-nq-BUd"/>
-                                <include reference="6bp-xA-2f4"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="kZZ-Ai-xT3"/>
                             </mask>
                         </variation>
                     </view>
@@ -140,12 +118,6 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUz-gK-QIz"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAH-wf-6PE">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" red="0.084899380667758373" green="0.28426536447135875" blue="0.62965111178581168" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPS-US-FjN">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="stop"/>
@@ -153,6 +125,15 @@
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a51-sh-b98"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAH-wf-6PE">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.084899380667758373" green="0.28426536447135875" blue="0.62965111178581168" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="145" y="451" width="121" height="27"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -166,8 +147,8 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="I7C-53-aMn"/>
-                                <exclude reference="QAH-wf-6PE"/>
                                 <exclude reference="iPS-US-FjN"/>
+                                <exclude reference="QAH-wf-6PE"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="R4D-jp-JNu"/>
@@ -181,8 +162,8 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="I7C-53-aMn"/>
-                                <include reference="QAH-wf-6PE"/>
                                 <include reference="iPS-US-FjN"/>
+                                <include reference="QAH-wf-6PE"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="R4D-jp-JNu"/>

@@ -30,6 +30,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         // Hide the stop button
         stopButton.hidden = true
         recordButton.enabled = true
+        labelRecording.hidden = false
+        labelRecording.text = "Tap to Record"
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,12 +43,12 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         print("in recordAction")
         stopButton.hidden = false
         recordButton.enabled = false
-        if(labelRecording.hidden) {
-            labelRecording.hidden = false
-        } else {
-            labelRecording.hidden = true
-        }
-        
+//        if(labelRecording.hidden) {
+//            labelRecording.hidden = false
+//        } else {
+//            labelRecording.hidden = true
+//        }
+        labelRecording.text = "recording in progress"
         // Record the user's voice
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,
             .UserDomainMask, true)[0] as String
