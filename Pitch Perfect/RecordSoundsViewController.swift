@@ -18,11 +18,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     //Declare globally
     var audioRecorder:AVAudioRecorder!
     var recordedAudio:RecordedAudio!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -43,11 +38,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         print("in recordAction")
         stopButton.hidden = false
         recordButton.enabled = false
-//        if(labelRecording.hidden) {
-//            labelRecording.hidden = false
-//        } else {
-//            labelRecording.hidden = true
-//        }
         labelRecording.text = "recording in progress"
         // Record the user's voice
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,
@@ -81,7 +71,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
         if(flag) {
             recordedAudio = RecordedAudio(filePathUrl: recorder.url, title: recorder.url.lastPathComponent!)
-            self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
+            performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         } else {
             print("Recording was not successful")
             recordButton.enabled = true

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vq9-NW-ngF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRk-vX-cuk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="stop"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="175" y="474" width="50" height="50"/>
                                 </variation>
                                 <connections>
@@ -30,9 +31,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6u-uH-G7D">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="darthvadar"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="232" y="250" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playDarthvaderAudio:" destination="Zg9-bE-jHe" eventType="touchUpInside" id="zAk-Fp-CTQ"/>
                                 </connections>
@@ -47,9 +45,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ped-ND-720">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="chipmunk"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="250" width="106" height="100"/>
-                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="38" y="323" width="106" height="100"/>
                                 </variation>
@@ -60,9 +55,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNV-i4-VaZ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="slow"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="46" y="114" width="109" height="105"/>
-                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="37" y="120" width="109" height="105"/>
                                 </variation>
@@ -95,14 +87,14 @@
                             <mask key="constraints">
                                 <exclude reference="1Kw-Da-kXl"/>
                                 <exclude reference="VUa-lM-yBb"/>
-                                <exclude reference="IKV-Mi-cmO"/>
-                                <exclude reference="oAV-Lr-PGC"/>
-                                <exclude reference="KlS-Dx-FhW"/>
-                                <exclude reference="ZVD-Dw-oPS"/>
                                 <exclude reference="MWu-9Q-jI7"/>
                                 <exclude reference="U3h-ka-yPw"/>
+                                <exclude reference="KlS-Dx-FhW"/>
+                                <exclude reference="ZVD-Dw-oPS"/>
                                 <exclude reference="9bh-BT-9xe"/>
                                 <exclude reference="j89-pn-hWo"/>
+                                <exclude reference="IKV-Mi-cmO"/>
+                                <exclude reference="oAV-Lr-PGC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -120,14 +112,14 @@
                             <mask key="constraints">
                                 <include reference="1Kw-Da-kXl"/>
                                 <include reference="VUa-lM-yBb"/>
-                                <include reference="IKV-Mi-cmO"/>
-                                <include reference="oAV-Lr-PGC"/>
-                                <include reference="KlS-Dx-FhW"/>
-                                <include reference="ZVD-Dw-oPS"/>
                                 <include reference="MWu-9Q-jI7"/>
                                 <include reference="U3h-ka-yPw"/>
+                                <include reference="KlS-Dx-FhW"/>
+                                <include reference="ZVD-Dw-oPS"/>
                                 <include reference="9bh-BT-9xe"/>
                                 <include reference="j89-pn-hWo"/>
+                                <include reference="IKV-Mi-cmO"/>
+                                <include reference="oAV-Lr-PGC"/>
                             </mask>
                         </variation>
                     </view>
